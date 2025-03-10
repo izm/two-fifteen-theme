@@ -32,6 +32,8 @@
 (deftheme two-fifteen
   "Dark theme with low saturation pastel colours."
   :background-mode 'dark
+  :kind 'color-scheme
+  :family 'two-fifteen
   )
 
 (custom-theme-set-variables
@@ -397,7 +399,7 @@
          (widget-single-line-field (:background "grey85"))
          ))
        ;; end two-fifteen-simple-faces
-       (class '((class color) (min-colors 89)))
+       (class '((class color) (min-colors 89))) ; (background dark) investigate for future light variant
        (built-faces '())
        )
 
