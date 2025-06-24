@@ -92,8 +92,9 @@
          (isearch             (:inherit highlight :weight bold :underline ,fg-link))
          (isearch-fail        (:weight bold :foreground  "light salmon"))
          (lazy-highlight      (:inherit region))
-         (trailing-whitespace (:background "light yellow"))
+         (trailing-whitespace (:background "#663333"))
          (query-replace       (:inherit isearch))
+         (which-func          (:foreground "salmon"))
 
          (ivy-highlight-face  (:weight bold))
          ;; (ivy-match-required-face      ())
