@@ -52,6 +52,7 @@
 
        (fg-code "LightSkyBlue2")        ;lavender
        (fg-link "turquoise1")
+       (fg-link-visited "turquoise3")
        (fg-string "plum1")
 
        (fg-success "green")
@@ -271,14 +272,15 @@
          (info-title-3  (:height 1.1 :weight bold :foreground ,fg3 :background unspecified))
          (info-title-4  (:height 1.0 :weight bold :slant normal :foreground ,fg4))
 
-         (info-header-node  (:underline t :foreground "orange"))
-         (info-header-xref  (:underline t :foreground "turquoise"))
+         (info-header-node  (:underline nil :foreground ,fg-link :slant italic :weight bold))
+         (info-header-xref  (:underline t :foreground ,fg-link))
          (info-index-match  (:weight bold :foreground "black" :background "orange"))
-         (info-menu-header  (:height 1.0 :weight bold :underline nil :overline nil :foreground ,fg-link :background unspecified))
-         (info-menu-star    (:foreground "turquoise" :background unspecified))
-         (info-node         (:underline t :foreground "blue"))
-         (info-xref         (:underline t :foreground "turquoise"))
-         (info-xref-visited (:underline t :foreground "turquoise4"))
+         (info-menu-header  (:height 1.0 :weight bold :underline nil :overline nil :foreground ,fg2 :background unspecified))
+         (info-menu-star    (:foreground ,fg2 :background unspecified))
+         (info-node         (:underline t :foreground ,fg-code))
+         (info-xref         (:underline t :foreground ,fg-link))
+         (info-xref-visited (:underline t :foreground ,fg-link-visited))
+         (Info-quoted       (:foreground ,fg-code)) ; Why is the I capitalized?
 
          (match         (:weight bold :foreground "black" :background "orange"))
          (next-error    (:height 1.1 :underline nil :foreground ,fg1 :background "#9E3699"))
