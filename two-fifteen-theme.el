@@ -188,8 +188,8 @@
 
          (ediff-current-diff-A   (:background "#553333"))
          (ediff-current-diff-B   (:background "#335533"))
-         (ediff-fine-diff-A      (:background nil :underline "#aa2222"))
-         (ediff-fine-diff-B      (:background nil :underline "#22aa22"))
+         (ediff-fine-diff-A      (:background unspecified :underline "#aa2222"))
+         (ediff-fine-diff-B      (:background unspecified :underline "#22aa22"))
          (ediff-odd-diff-A       (:background "grey5"))
          (ediff-odd-diff-B       (:background "grey15"))
          (ediff-even-diff-A      (:background "grey15"))
