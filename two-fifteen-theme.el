@@ -325,6 +325,7 @@
          (org-formula                 (:foreground "orange"))
          (org-headline-done           (:height 1.0 :weight normal :strike-through nil :foreground "grey"))
          (org-hide                    (:foreground ,bg1))
+         (org-indent                  (:inherit fixed-pitch))
          (org-latex-and-related       (:foreground "SkyBlue4" :background ,fg1))
          (org-level-1                 (:foreground ,fg1 :background unspecified :weight bold :height 1.3 :underline "grey35"))
          (org-level-2                 (:foreground ,fg2 :background unspecified :weight medium :height 1.2 :underline nil))
