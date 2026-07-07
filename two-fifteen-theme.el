@@ -87,7 +87,7 @@
          (highlight           (:foreground unspecified :background "DodgerBlue3"))
          (region              (:background "DodgerBlue4"))
          (secondary-selection (:weight bold :background "RoyalBlue4")) ;Org-mode sparse trees
-         (hl-line  (:background "grey33" :underline nil)) ; (global-)hl-line-mode
+         (hl-line  (:background "grey33" :underline unspecified)) ; (global-)hl-line-mode
          (hl-line-face  (:background "grey33"))
 
          (isearch             (:inherit highlight :weight bold :underline ,fg-link))
@@ -142,10 +142,10 @@
          (font-lock-constant-face             (:foreground "DarkOrange1"))
          (font-lock-doc-face                  (:foreground "peach puff"))
          (font-lock-function-name-face        (:weight bold :foreground "lemon chiffon"))
-         (font-lock-keyword-face              (:bold nil :foreground "deep sky blue"))
+         (font-lock-keyword-face              (:bold unspecified :foreground "deep sky blue"))
          (font-lock-preprocessor-face         (:foreground "grey54"))
-         (font-lock-regexp-grouping-backslash (:weight bold :inherit nil))
-         (font-lock-regexp-grouping-construct (:weight bold :inherit nil))
+         (font-lock-regexp-grouping-backslash (:weight bold :inherit unspecified))
+         (font-lock-regexp-grouping-construct (:weight bold :inherit unspecified))
          (font-lock-string-face               (:foreground ,fg-string))
          (font-lock-type-face                 (:weight bold :foreground ,fg3))
          (font-lock-variable-name-face        (:weight normal :foreground ,fg-link))
@@ -162,7 +162,7 @@
          (message-header-cc         (:inherit message-header-to))
          (message-header-other      (:family "Sans Serif" :slant normal :foreground ,fg1))
          (message-header-subject    (:family "Sans Serif" :foreground ,fg-link))
-         (message-header-to         (:family "Sans Serif" :underline nil :foreground ,fg1))
+         (message-header-to         (:family "Sans Serif" :underline unspecified :foreground ,fg1))
          (message-cited-text        (:foreground "#5050B0" :background "grey96"))
          (message-separator         (:family "Sans Serif" :weight normal :foreground ,fg1 :background "dark slate grey"))
          (message-header-newsgroups (:family "Sans Serif" :foreground "#3399CC"))
@@ -195,7 +195,7 @@
          (ediff-even-diff-A      (:background "grey15"))
          (ediff-even-diff-B      (:background "grey5"))
 
-         (calendar-month-header   (:foreground "grey54" :background unspecified :weight medium :underline nil))
+         (calendar-month-header   (:foreground "grey54" :background unspecified :weight medium :underline unspecified))
          (calendar-today          (:weight bold :box (:line-width 1 :style released-button)))
          (calendar-weekday-header (:forground ,fg1 :weight bold :underline "grey35"))
          (calendar-weekend-header (:foreground "burlywood" :weight bold :underline "grey35")); (:inherit org-agenda-date :foreground "burlywood")))
@@ -203,8 +203,8 @@
          (diary                   (:weight normal :foreground "lemon chiffon" :background "grey10"))
          (diary-anniversary       (:weight normal :foreground "deep sky blue" :background "grey20"))
 
-         (comint-highlight-input     (:weight bold :foreground "light sea green" :inherit nil))
-         (comint-highlight-prompt    (:weight bold :foreground "sea green" :inherit nil))
+         (comint-highlight-input     (:weight bold :foreground "light sea green" :inherit unspecified))
+         (comint-highlight-prompt    (:weight bold :foreground "sea green" :inherit unspecified))
 
          (company-tooltip            (:background "#031A25"))
          (company-scrollbar-bg       (:inherit secondary-selection))
@@ -234,7 +234,7 @@
          (custom-changed                 (:foreground "white" :background "blue"))
          (custom-comment                 (:background "grey85"))
          (custom-comment-tag             (:foreground "blue4"))
-         (custom-documentation           (nil))
+         (custom-documentation           (unspecified))
          (custom-face-tag                (:height 1.2 :weight bold))
          (custom-group-tag               (:height 1.2 :weight bold :foreground ,fg1))
          (custom-variable-obsolete       (:inherit font-lock-comment-face :height 1.2 :weight bold))
@@ -252,7 +252,7 @@
          (custom-visibility              (:weight normal :underline t :foreground ,fg-link))
 
          (dired-directory (:foreground ,fg-link))
-         (dired-header    (:weight bold :foreground ,fg-link :underline nil :height 1.3))
+         (dired-header    (:weight bold :foreground ,fg-link :underline unspecified :height 1.3))
          (dired-ignored   (:strike-through t :foreground "red"))
          (dired-mark      (:inherit warning))
          (dired-marked    (:inherit warning))
@@ -267,15 +267,15 @@
 
          (help-argument-name (:foreground "grey50"))
 
-         (info-title-1  (:height 1.3 :weight bold :overline nil :foreground ,fg1 :background "grey24" :underline t))
-         (info-title-2  (:height 1.2 :weight bold :overline nil :foreground ,fg2 :background unspecified))
+         (info-title-1  (:height 1.3 :weight bold :overline unspecified :foreground ,fg1 :background "grey24" :underline t))
+         (info-title-2  (:height 1.2 :weight bold :overline unspecified :foreground ,fg2 :background unspecified))
          (info-title-3  (:height 1.1 :weight bold :foreground ,fg3 :background unspecified))
          (info-title-4  (:height 1.0 :weight bold :slant normal :foreground ,fg4))
 
-         (info-header-node  (:underline nil :foreground ,fg-link :slant italic :weight bold))
+         (info-header-node  (:underline unspecified :foreground ,fg-link :slant italic :weight bold))
          (info-header-xref  (:underline t :foreground ,fg-link))
          (info-index-match  (:weight bold :foreground "black" :background "orange"))
-         (info-menu-header  (:height 1.0 :weight bold :underline nil :overline nil :foreground ,fg2 :background unspecified))
+         (info-menu-header  (:height 1.0 :weight bold :underline unspecified :overline unspecified :foreground ,fg2 :background unspecified))
          (info-menu-star    (:foreground ,fg2 :background unspecified))
          (info-node         (:underline t :foreground ,fg-code))
          (info-xref         (:underline t :foreground ,fg-link))
@@ -283,13 +283,13 @@
          (Info-quoted       (:foreground ,fg-code)) ; Why is the I capitalized?
 
          (match         (:weight bold :foreground "black" :background "orange"))
-         (next-error    (:height 1.1 :underline nil :foreground ,fg1 :background "#9E3699"))
+         (next-error    (:height 1.1 :underline unspecified :foreground ,fg1 :background "#9E3699"))
          (nobreak-space (:background unspecified)) ;"#CCE8F6"
 
          (org-agenda-calendar-event   (:weight bold :foreground "pink" :background "grey20"))
          (org-agenda-calendar-sexp    (:foreground "DodgerBlue3" :background "grey96"))
          (org-agenda-clocking         (:foreground unspecified :background "black"))
-         (org-agenda-column-dateline  (:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#E6AD4F" :background "#FFF2DE"))
+         (org-agenda-column-dateline  (:height 1.0 :weight normal :slant normal :underline unspecified :strike-through unspecified :foreground "#E6AD4F" :background "#FFF2DE"))
          (org-agenda-current-time     (:underline t :foreground ,fg1))
          (org-agenda-date             (:inherit org-level-1 :weight normal :background unspecified))
          (org-agenda-date-today       (:inherit org-agenda-date :weight bold :underline t))
@@ -305,8 +305,8 @@
 
          (org-archived                (:foreground "grey70"))
          (org-block                   (:inherit fixed-pitch :foreground "lemon chiffon" :background ,bg-code))
-         (org-block-begin-line        (:inherit fixed-pitch :underline nil :foreground ,fg-code :overline nil :background ,bg-code))
-         (org-block-end-line          (:inherit fixed-pitch :overline nil :foreground ,fg-code :underline nil :background ,bg-code))
+         (org-block-begin-line        (:inherit fixed-pitch :underline unspecified :foreground ,fg-code :overline unspecified :background ,bg-code))
+         (org-block-end-line          (:inherit fixed-pitch :overline unspecified :foreground ,fg-code :underline unspecified :background ,bg-code))
          (org-checkbox                (:inherit fixed-pitch :weight medium :foreground ,fg-code :background ,bg-code))
          (org-clock-overlay           (:foreground ,fg1 :background "SkyBlue4" :height 1))
          (org-code                    (:inherit fixed-pitch :foreground ,fg-code :background ,bg-code))
@@ -320,16 +320,16 @@
          (org-document-title          (:foreground ,fg1 :weight bold :height 1.8))
          (org-done                    (:weight bold :foreground "grey73"))
          (org-drawer                  (:foreground "light sky blue"))
-         (org-ellipsis                (:underline nil :foreground "grey60"))
+         (org-ellipsis                (:underline unspecified :foreground "grey60"))
          (org-footnote                (:underline t :foreground "DeepSkyBlue3"))
          (org-formula                 (:foreground "orange"))
-         (org-headline-done           (:height 1.0 :weight normal :strike-through nil :foreground "grey"))
+         (org-headline-done           (:height 1.0 :weight normal :strike-through unspecified :foreground "grey"))
          (org-hide                    (:foreground ,bg1))
-         (org-indent                  (:inherit fixed-pitch))
+         (org-indent                  (:inherit (fixed-pitch org-hide)))
          (org-latex-and-related       (:foreground "SkyBlue4" :background ,fg1))
          (org-level-1                 (:foreground ,fg1 :background unspecified :weight bold :height 1.3 :underline "grey35"))
-         (org-level-2                 (:foreground ,fg2 :background unspecified :weight medium :height 1.2 :underline nil))
-         (org-level-3                 (:foreground ,fg3 :overline nil :weight bold :height 1.1))
+         (org-level-2                 (:foreground ,fg2 :background unspecified :weight medium :height 1.2 :underline unspecified))
+         (org-level-3                 (:foreground ,fg3 :overline unspecified :weight bold :height 1.1))
          (org-level-4                 (:foreground ,fg4 :height 1.1 :weight bold :slant normal))
          (org-level-5                 (:foreground ,fg1 :height 1.0 :weight bold :slant normal))
          (org-level-6                 (:foreground ,fg2 :height 1.0 :weight bold :slant italic))
@@ -375,16 +375,16 @@
          (speedbar-button-face    (:foreground "green4"))
          (speedbar-directory-face (:foreground "turquoise"))
          (speedbar-file-face      (:foreground ,fg1))
-         (speedbar-highlight-face (:underline nil :foreground ,fg1 :background "DodgerBlue3"))
+         (speedbar-highlight-face (:underline unspecified :foreground ,fg1 :background "DodgerBlue3"))
          (speedbar-selected-face  (:underline t :foreground "red"))
          (speedbar-tag-face       (:foreground ,fg2))
          (speedbar-separator-face (:foreground ,fg1 :background "blue"))
          ;; TODO: not sure how to remove the image before the "Active Buffers" and "Scratch Buffers" spearators
 
          ;; tab-bar and tab-line mode
-         (tab-bar               (:underline nil :foreground ,fg2 :background "grey15"))
-         (tab-bar-tab           (:underline nil :box (:line-width 3 :color "grey15" :style nil) :inherit tab-bar))
-         (tab-bar-tab-inactive  (:underline nil :box (:line-width 3 :color "grey15" :style nil) :inherit font-lock-comment-face))
+         (tab-bar               (:underline unspecified :foreground ,fg2 :background "grey15"))
+         (tab-bar-tab           (:underline unspecified :box (:line-width 3 :color "grey15" :style unspecified) :inherit tab-bar))
+         (tab-bar-tab-inactive  (:underline unspecified :box (:line-width 3 :color "grey15" :style unspecified) :inherit font-lock-comment-face))
          ;; No tab-bar-highlight face
          (tab-line              (:inherit tab-bar))
          (tab-line-tab          (:inherit tab-bar-tab))
