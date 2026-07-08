@@ -383,8 +383,8 @@
 
          ;; tab-bar and tab-line mode
          (tab-bar               (:underline unspecified :foreground ,fg2 :background "grey15"))
-         (tab-bar-tab           (:underline unspecified :box (:line-width 3 :color "grey15" :style unspecified) :inherit tab-bar))
-         (tab-bar-tab-inactive  (:underline unspecified :box (:line-width 3 :color "grey15" :style unspecified) :inherit font-lock-comment-face))
+         (tab-bar-tab           (:underline unspecified :box (:line-width 3 :color "grey15" :style flat-button) :inherit tab-bar))
+         (tab-bar-tab-inactive  (:underline unspecified :box (:line-width 3 :color "grey15" :style flat-button) :inherit font-lock-comment-face))
          ;; No tab-bar-highlight face
          (tab-line              (:inherit tab-bar))
          (tab-line-tab          (:inherit tab-bar-tab))
